@@ -20,8 +20,8 @@ app.post('/leave', (req, res) => {
 app.post('/paycheck', (req, res) => {
   console.log('/paycheck', req.body);
   let paycheck = {
-    '2': 'ccristina.pdf',
-    '3': 'asantos.pdf'
+    '2': 'asantos.pdf',
+    '3': 'ccristina.pdf'
   };
 
   let myPaycheck = paycheck[req.body.userID] || false;
@@ -38,7 +38,7 @@ app.post('/paycheck', (req, res) => {
 
 app.post('/hours', (req, res) => {
   console.log('/hours', req.body);
-  let response = {'hasHours': true, 'hourBank': (+req.body.userID === 3 ? '03:10' : '25:12')};
+  let response = {'hasHours': true, 'hourBank': (req.body.userID === '3' ? '03:10' : '25:12')};
   console.log('/hours', response);
   return res.status(200).json(response);
 });
