@@ -21,7 +21,7 @@ app.post('/leave', (req, res) => {
 app.post('/paycheck', (req, res) => {
   console.log('/paycheck', req.body);
   let paycheck = {
-    '2': 'asantos.pdf',
+    '2': 'mobi-dev.pdf',
     '3': 'ccristina.pdf'
   };
 
