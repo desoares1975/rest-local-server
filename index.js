@@ -2,6 +2,7 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
+const moment = require('moment');
 const app = express();
 
 app.use(bodyParser.urlencoded({"extended": true}));
@@ -10,7 +11,7 @@ app.use(bodyParser.json({}));
 app.post('/leave', (req, res) => {
   console.log('/leave', req.body);
   let hasVacation = (+req.body.userID === 3);
-  let period = hasVacation ? '04/06/18,22/06/18' : null;
+  let period = hasVacation ? moment().add(3, 'month').format('05/MM/YY') + ',' + moment().add(4, 'month').format('06/MM/YY') : null;
   let negativeResponse = hasVacation ? false : ['Você não tem férias agendadas, você poderá realizar a solicitação através do portal do RH.'];
   let response = {hasVacation, period, negativeResponse};
   console.log('/leave', response);
@@ -28,8 +29,8 @@ app.post('/paycheck', (req, res) => {
   let response = {
     'hasPayment': (myPaycheck ? true : null),
     'file': myPaycheck ? (`http://mobi.blendit.com.br:3300/downloads/${myPaycheck}`) : null,
-    'myPaycheckMonth': '03/2018',
-    'paidDate': '25/03/2018',
+    'myPaycheckMonth': moment().subtract(1, 'month').format('MM/YYYY'),
+    'paidDate': moment().subtract(1, 'month').format('25/MM/YYYY'),
     'negativeResponse': myPaycheck ? false : 'Sinto muito, você ainda não tem contracheques disponíveis.'
   };
   console.log('/paycheck', response);
