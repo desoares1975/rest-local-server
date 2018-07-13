@@ -2358,13 +2358,17 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
 });
 
 app.post('/UBIMobileService/Trip/SetType', (req, res) => {
-  res.status(200).json();
+  res.status(200).json({
+    "error": false,
+    "ErrorList": [],
+    "status": "OK"
+  });
 });
 
 app.post('/UBIMobileService/User/Login', (req, res) => {
 
   if (req.body.Email !== 'ti.ceabs@gmail.com') {
-    return res.statur(401).json({
+    return res.status(401).json({
         "Error": true,
         "ErrorList": [
           "Unauthorized"
@@ -2373,24 +2377,118 @@ app.post('/UBIMobileService/User/Login', (req, res) => {
   }
 
   res.status(200).json({
-    "Error": false,
-    "ErrorList": [],
-    "BirthDate": null,
-    "BirthDateFormatted": null,
-    "CreateDate": "/Date(1509040433000-0200)/",
-    "CreateDateFormatted": "2017-10-26T15:53:53Z",
-    "GenderId": 1,
-    "Serial": "BRA0000000000000301",
-    "Token": "55baa0d3-7b92-45ac-a51b-2a9b711b1c32",
-    "UserName": "TI CEABS Gmail"
-});
+      "Error": false,
+      "ErrorList": [],
+      "BirthDate": null,
+      "BirthDateFormatted": null,
+      "CreateDate": "/Date(1509040433000-0200)/",
+      "CreateDateFormatted": "2017-10-26T15:53:53Z",
+      "GenderId": 1,
+      "Serial": "BRA0000000000000301",
+      "Token": "55baa0d3-7b92-45ac-a51b-2a9b711b1c32",
+      "UserName": "TI CEABS Gmail"
+  });
 });
 
 app.get('/UBIMobileService/Gamification/User/Achievements', (req, res) => {
   res.status(200).json({
-    "error": false,
-    "status": "OK"
-  });
+    "Error": false,
+    "ErrorList": [],
+    "NextPage": false,
+    "Records": [
+        {
+            "Error": false,
+            "ErrorList": [],
+            "AchievementDate": "/Date(1531168787645-0300)/",
+            "AchievementDescription": "deleniti",
+            "AchievementIconUrl": "http://lorempixel.com/640/480/nature",
+            "AchievementName": "Conquista 120",
+            "AchievementType": 0
+        },
+        {
+            "Error": false,
+            "ErrorList": [],
+            "AchievementDate": "/Date(1530909451677-0300)/",
+            "AchievementDescription": "Consequatur laboriosam eos.",
+            "AchievementIconUrl": "http://lorempixel.com/640/480/city",
+            "AchievementName": "Conquista 121",
+            "AchievementType": 2
+        },
+        {
+            "Error": false,
+            "ErrorList": [],
+            "AchievementDate": "/Date(1531440997217-0300)/",
+            "AchievementDescription": "Adipisci harum accusamus esse. Aspernatur cupiditate unde ea facere. Voluptatibus illo dolores. Repellat consectetur illo. Sed sequi quo perspiciatis labore quaerat. Qui est repellendus.",
+            "AchievementIconUrl": "http://lorempixel.com/640/480/food",
+            "AchievementName": "Conquista 122",
+            "AchievementType": 1
+        },
+        {
+            "Error": false,
+            "ErrorList": [],
+            "AchievementDate": null,
+            "AchievementDescription": "Assumenda qui assumenda numquam facilis autem et ipsam.",
+            "AchievementIconUrl": "http://lorempixel.com/640/480/nature",
+            "AchievementName": "Conquista 123",
+            "AchievementType": 2
+        },
+        {
+            "Error": false,
+            "ErrorList": [],
+            "AchievementDate": "/Date(1531362539299-0300)/",
+            "AchievementDescription": "Consequuntur occaecati perspiciatis facere accusantium atque dicta et nesciunt.\nFacilis officiis voluptas rerum.\nDolorem doloribus qui eos ullam.",
+            "AchievementIconUrl": "http://lorempixel.com/640/480/business",
+            "AchievementName": "Conquista 124",
+            "AchievementType": 1
+        },
+        {
+            "Error": false,
+            "ErrorList": [],
+            "AchievementDate": null,
+            "AchievementDescription": "Qui quo veniam.",
+            "AchievementIconUrl": "http://lorempixel.com/640/480/food",
+            "AchievementName": "Conquista 125",
+            "AchievementType": 2
+        },
+        {
+            "Error": false,
+            "ErrorList": [],
+            "AchievementDate": null,
+            "AchievementDescription": "sit",
+            "AchievementIconUrl": "http://lorempixel.com/640/480/transport",
+            "AchievementName": "Conquista 126",
+            "AchievementType": 1
+        },
+        {
+            "Error": false,
+            "ErrorList": [],
+            "AchievementDate": "/Date(1530703509138-0300)/",
+            "AchievementDescription": "soluta",
+            "AchievementIconUrl": "http://lorempixel.com/640/480/business",
+            "AchievementName": "Conquista 127",
+            "AchievementType": 1
+        },
+        {
+            "Error": false,
+            "ErrorList": [],
+            "AchievementDate": null,
+            "AchievementDescription": "Esse temporibus quo optio dolor. In nihil soluta possimus molestiae itaque dicta magnam nisi est. Quo voluptatum minus et aliquid. Placeat qui quo dolorum voluptatibus vel omnis autem voluptate.",
+            "AchievementIconUrl": "http://lorempixel.com/640/480/sports",
+            "AchievementName": "Conquista 128",
+            "AchievementType": 0
+        },
+        {
+            "Error": false,
+            "ErrorList": [],
+            "AchievementDate": null,
+            "AchievementDescription": "Ducimus blanditiis et.\nEt vel quas veritatis molestiae.",
+            "AchievementIconUrl": "http://lorempixel.com/640/480/technics",
+            "AchievementName": "Conquista 129",
+            "AchievementType": 2
+        }
+    ],
+    "Total": 0
+});
 });
 
 app.get('/UBIMobileService/Gamification/User/Challenges', (req, res) => {
