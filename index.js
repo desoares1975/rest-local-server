@@ -1667,7 +1667,7 @@ app.get('/UBIMobileService/Gamification/User/Profile', (req, res) => {
 });
 });
 
-app.get('/UBIMobileService/Trip/Lis', (req, res) => {
+app.get('/UBIMobileService/Trip/List', (req, res) => {
   res.status(200).json({
     "Error": false,
     "ErrorList": [],
