@@ -1667,7 +1667,7 @@ app.get('/UBIMobileService/Gamification/User/Profile', (req, res) => {
 });
 });
 
-app.get('/UBIMobileService/ec2-54-156-252-167.compute-1.amazonaws.comt', (req, res) => {
+app.get('/UBIMobileService/Trip/Lis', (req, res) => {
   res.status(200).json({
     "Error": false,
     "ErrorList": [],
