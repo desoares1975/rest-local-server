@@ -58,7 +58,7 @@ app.get('/UBIMobileService/Dashboard/Mobile/All', (req, res) => {
       "AmountSuddenAcceleration": 400,
       "AmountSuddenBraking": 227,
       "AmountSuddenCurve": 240,
-      "AmountTrips": 590,
+      "AmountTrips": 20,
       "Days": 365,
       "DistanceTotal": 167.25666614587263,
       "Score": 9,
