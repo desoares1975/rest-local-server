@@ -1667,7 +1667,7 @@ app.get('/UBIMobileService/Gamification/User/Profile', (req, res) => {
 });
 });
 
-app.get('/UBIMobileService/Trip/List', (req, res) => {
+app.get('/UBIMobileService/ec2-54-156-252-167.compute-1.amazonaws.comt', (req, res) => {
   res.status(200).json({
     "Error": false,
     "ErrorList": [],
@@ -1705,7 +1705,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531414488948-0300)/",
             "TotalTime": 672,
             "TripGuid": null,
-            "TripType": 839
+            "TripType": 0
         },
         {
             "AmountEvents": 305,
@@ -1739,7 +1739,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531465690503-0300)/",
             "TotalTime": 239,
             "TripGuid": null,
-            "TripType": 308
+            "TripType": 1
         },
         {
             "AmountEvents": 105,
@@ -1773,7 +1773,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531473330470-0300)/",
             "TotalTime": 352,
             "TripGuid": null,
-            "TripType": 440
+            "TripType": 2
         },
         {
             "AmountEvents": 291,
@@ -1807,7 +1807,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531499413039-0300)/",
             "TotalTime": 603,
             "TripGuid": null,
-            "TripType": 281
+            "TripType": 3
         },
         {
             "AmountEvents": 395,
@@ -1841,7 +1841,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531474228684-0300)/",
             "TotalTime": 220,
             "TripGuid": null,
-            "TripType": 878
+            "TripType": 4
         },
         {
             "AmountEvents": 213,
@@ -1875,7 +1875,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531456117636-0300)/",
             "TotalTime": 251,
             "TripGuid": null,
-            "TripType": 501
+            "TripType": 5
         },
         {
             "AmountEvents": 127,
@@ -1909,7 +1909,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531416734448-0300)/",
             "TotalTime": 231,
             "TripGuid": null,
-            "TripType": 621
+            "TripType": 0
         },
         {
             "AmountEvents": 21,
@@ -1943,7 +1943,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531452087719-0300)/",
             "TotalTime": 273,
             "TripGuid": null,
-            "TripType": 764
+            "TripType": 1
         },
         {
             "AmountEvents": 122,
@@ -1977,7 +1977,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531463580595-0300)/",
             "TotalTime": 280,
             "TripGuid": null,
-            "TripType": 420
+            "TripType": 2
         },
         {
             "AmountEvents": 791,
@@ -2011,7 +2011,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531475444458-0300)/",
             "TotalTime": 719,
             "TripGuid": null,
-            "TripType": 18
+            "TripType": 2
         },
         {
             "AmountEvents": 926,
@@ -2045,7 +2045,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531448052888-0300)/",
             "TotalTime": 495,
             "TripGuid": null,
-            "TripType": 931
+            "TripType": 2
         },
         {
             "AmountEvents": 156,
@@ -2079,7 +2079,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531424734513-0300)/",
             "TotalTime": 124,
             "TripGuid": null,
-            "TripType": 266
+            "TripType": 3
         },
         {
             "AmountEvents": 394,
@@ -2113,7 +2113,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531441853461-0300)/",
             "TotalTime": 446,
             "TripGuid": null,
-            "TripType": 355
+            "TripType": 3
         },
         {
             "AmountEvents": 897,
@@ -2147,7 +2147,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531415221709-0300)/",
             "TotalTime": 610,
             "TripGuid": null,
-            "TripType": 235
+            "TripType": 3
         },
         {
             "AmountEvents": 568,
@@ -2181,7 +2181,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531493821922-0300)/",
             "TotalTime": 280,
             "TripGuid": null,
-            "TripType": 747
+            "TripType": 4
         },
         {
             "AmountEvents": 925,
@@ -2215,7 +2215,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531461566349-0300)/",
             "TotalTime": 499,
             "TripGuid": null,
-            "TripType": 884
+            "TripType": 4
         },
         {
             "AmountEvents": 923,
@@ -2249,7 +2249,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531469221104-0300)/",
             "TotalTime": 335,
             "TripGuid": null,
-            "TripType": 466
+            "TripType": 4
         },
         {
             "AmountEvents": 414,
@@ -2283,7 +2283,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531497550582-0300)/",
             "TotalTime": 167,
             "TripGuid": null,
-            "TripType": 801
+            "TripType": 5
         },
         {
             "AmountEvents": 251,
@@ -2317,7 +2317,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531421911250-0300)/",
             "TotalTime": 569,
             "TripGuid": null,
-            "TripType": 85
+            "TripType": 5
         },
         {
             "AmountEvents": 739,
@@ -2351,7 +2351,7 @@ app.get('/UBIMobileService/Trip/List', (req, res) => {
             "StartDateUTC": "/Date(1531446648052-0300)/",
             "TotalTime": 256,
             "TripGuid": null,
-            "TripType": 209
+            "TripType": 5
         }
     ]
 });
